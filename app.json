@@ -15,28 +15,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "This app needs Bluetooth access to receive data from Bluetooth modules.",
-        "NSBluetoothPeripheralUsageDescription": "This app needs Bluetooth access to receive data from Bluetooth modules."
-      }
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "permissions": [
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.BLUETOOTH_SCAN",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION"
-      ]
+      "package": "com.bluetoothdatamanager.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a994e8d3-40fa-487d-9e2d-6c5bb6540ccc"
+      }
     }
   }
-} 
+}
